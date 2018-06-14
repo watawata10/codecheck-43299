@@ -6,11 +6,11 @@ public class App {
 		int kazu = Integer.parseInt(request);
 		int waru3noamari = kazu % 3;
 
-		if (waru3noamari == 0 && kazu <= 1000 && kazu > 0 && request.startsWith("3")) {
+		if (waru3noamari == 0 && kazu <= 1000 && kazu > 0 && request.contains("3")) {
 			System.out.println("dumb");
 		}else if (waru3noamari == 0 && kazu <= 1000 && kazu > 0) {
 				System.out.println("idiot");
-		}else if (request.startsWith("3")  && kazu <= 1000 && kazu > 0) {
+		}else if (request.contains("3") && kazu <= 1000 && kazu > 0) {
 				System.out.println("stupid");
 		}else {
 			System.out.println("invalid");
