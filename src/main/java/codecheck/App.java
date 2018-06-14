@@ -3,7 +3,7 @@ package codecheck;
 public class App {
 	public static void main(String[] args) {
 
-
+try {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String request = args[i];
 			int kazu = Integer.parseInt(request);
@@ -21,6 +21,9 @@ public class App {
 				System.out.println("invalid");
 			}
 		}
+	}catch(NumberFormatException e) {
+		System.out.println("invalid");
 	}
+
 }
 
