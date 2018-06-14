@@ -12,6 +12,8 @@ public class App {
 				System.out.println("idiot");
 		}else if (request.contains("3") && kazu <= 1000 && kazu > 0) {
 				System.out.println("stupid");
+		}else if ( kazu <= 1000 && kazu > 0) {
+			System.out.println("smart");
 		}else {
 			System.out.println("invalid");
 		}
